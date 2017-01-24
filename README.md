@@ -1,5 +1,7 @@
 # Mini Projects
 
+### [To Do List](https://madeleinel.github.io/Mini-Projects/)
+
 ## Current Projects
 
 ### [JavaScript30](https://javascript30.com/)
@@ -10,4 +12,8 @@
 
 ### [FreeCodeCamp](https://www.freecodecamp.com/)
 
-+ [Random Quote Generator](/FCC/QuoteGenerator)
++ [Random Quote Generator (WIP - to include Tweet button, update styling, etc)](/FCC/QuoteGenerator)
+
+### Other Projects
+
++ [Digital Clock](/clock)
