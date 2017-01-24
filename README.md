@@ -1,7 +1,6 @@
 # Mini Projects
 
 ### [To Do List](https://madeleinel.github.io/Mini-Projects/)
-### <a href="https://madeleinel.github.io/Mini-Projects/" target="_blank">To DO list</a>
 
 ## Current Projects
 
@@ -17,4 +16,4 @@
 
 ### Other Projects
 
-+ [Digital Clock](/clock)
++ [Digital Clock](/own-projects/digital-clock)
