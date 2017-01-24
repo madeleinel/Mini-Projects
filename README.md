@@ -7,7 +7,7 @@
 ### [JavaScript30](https://javascript30.com/)
 
 + [Clock with modifiable CSS variables (thick tick marks)](https://github.com/madeleinel/Mini-Projects/tree/master/JS30/Clock-thickTicks)
-+ [Drum Kit (WIP - to update styling)](/DrumKit.md)
++ [Drum Kit (WIP - to update styling)](https://github.com/madeleinel/Mini-Projects/tree/master/JS30/DrumKit)
 + [HTML Canvas (WIP - to finish adding modifiable variables)](/Canvas.md)
 
 ### [FreeCodeCamp](https://www.freecodecamp.com/)
