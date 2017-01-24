@@ -1,4 +1,4 @@
-# Mini-Projects
+# Mini Projects
 
 ## Current Projects
 
