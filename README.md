@@ -16,4 +16,6 @@
 
 ### Other Projects
 
-+ [Digital Clock](/own-projects/digital-clock)
++ [Digital Clock](own-projects/digital-clock)
+
+<!-- https://github.com/madeleinel/Mini-Projects/tree/master/Own-Projects/Digital-Clock -->
