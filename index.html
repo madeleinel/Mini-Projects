@@ -1,0 +1,612 @@
+<!Doctype html>
+
+<html>
+	<head>
+		<title>To Do List</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	</head>
+
+  <body>
+
+<!-- To Do = &#10057;
+WIP = &#8944 >> &#8230;;
+Done = &#10008; -->
+
+    <header>
+      <h1><a href="#dailies">To Do List</a></h1>
+      <nav id="navBar">
+        <ul id="navList">
+          <li><a href="#"></a></li>
+          <li><a href="#courses">Courses</a>
+            <ul>
+              <li><a href="#JS30">JavaScript 30</a></li>
+              <li><a href="#Codecademy">Codecademy</a></li>
+              <li><a href="#CS50">CS50</a></li>
+              <li><a href="#JSWeirdParts">JS the Weird Parts</a></li>
+              <li><a href="#ES6">ES6</a></li>
+              <li><a href="#EloquentJS">Eloquent JavaScript</a></li>
+              <li><a href="#gitUdacity">Git & GitHub</a></li>
+              <li><a href="#FCC">Free Code Camp</a></li>
+              <li><a href="#CommandLine">Command Line</a></li>
+              <li><a href="#FAC">FaC Coursebook</a></li>
+              <li><a href="#typingClub">Typing Club</a></li>
+            </ul>
+          </li>
+          <li id="nav-trigger" class="icon nav-trigger"><span class="fa fa-icon">&#9881;</span></li>
+          <li><a href="#projects">Projects</a>
+            <ul>
+  				    <li><a href="#portfolio">Portfolio Page</a></li>
+              <li><a href="#cheatJS">JS Cheat Sheet</a></li>
+  				    <li><a href="#blogM">Mathilda's Blog</a></li>
+              <li><a href="#miniProjects">Mini Projects</a></li>
+              <li><a href="#js30Projects">JS30 Projects</a></li>
+              <li><a href="#fccProjects">FCC Projects</a></li>
+  				  </ul>
+          </li>
+          <li><a href="#"></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="main">
+
+      <div id="dailies" class="container">
+        <h2>Daily Tasks</h2>
+        <div class="tasks">
+          <div class="column one">
+            <div class="task typing">
+              <div class="check">&#10057;</div>
+              <div class="description">
+                <div class="name"><a href="https://www.typingclub.com/sportal/team-2/program-typing-jungle.game" target="_blank">Typing Practice <small>on Typing Club</small></a></div>
+              </div>
+            </div>
+            <div class="task github">
+              <div class="check">&#10057;</div>
+              <div class="description">
+                <div class="name"><a href="https://github.com/madeleinel" target="_blank">Commit to repo <small>on GitHub</small></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="column two">
+            <div class="task article">
+              <div class="check">&#10057;</div>
+              <div class="description">
+                <div class="name">Read article</div>
+              </div>
+            </div>
+            <div class="task cheatSheet">
+              <div class="check">&#10057;</div>
+              <div class="description">
+                <div class="name">Update cheat sheet</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="courses" class="container">
+        <h2>Courses</h2>
+        <div id="JS30" class="task">
+          <div class="description">
+            <div class="name"><a href="https://javascript30.com/account/access/584c01df99ec21353f30e7fe" target="_blank">JavaScript 30 <small>by Wes Bos</small></a></div>
+            <div class="subTasks">
+              <div class="column one">
+                <div class="subTask">&#8230; Drum Kit</div>
+                <div class="subTask">&#10008; Clock</div>
+                <div class="subTask">&#10008; CSS Variables</div>
+                <div class="subTask">&#8230; Array Cardio 1</div>
+                <div class="subTask">&#10057; Image Gallery</div>
+                <div class="subTask">&#10057; Ajax Type Ahead</div>
+              </div>
+              <div class="column two">
+                <div class="subTask">&#10057; Array Cardio 2</div>
+                <div class="subTask">&#8230; HTML5 Canvas</div>
+                <div class="subTask">&#10057; Dev Tools Tricks</div>
+                <div class="subTask">&#10057; Multiple Checkboxes</div>
+                <div class="subTask">&#10057; HTML5 Video Player</div>
+                <div class="subTask">&#10057; Konami Code</div>
+              </div>
+              <div class="column three">
+                <div class="subTask">&#10057; Slide In on Scroll</div>
+                <div class="subTask">&#10057; Objects & Arrays</div>
+                <div class="subTask">&#10057; Local Storage & Event Delegation</div>
+                <div class="subTask">&#10057; Mouse Move Effect</div>
+                <div class="subTask">&#10057; Sorting w/o Articles</div>
+                <div class="subTask">&#10057; Tally Times w/ Reduce</div>
+              </div>
+              <div class="column four">
+                <div class="subTask">&#10057; Webcam</div>
+                <div class="subTask">&#10057; Speech Recognition</div>
+                <div class="subTask">&#10057; Geolocation</div>
+                <div class="subTask">&#10057; Follow Along Links</div>
+                <div class="subTask">&#10057; Speech Synthesis</div>
+                <div class="subTask">&#10057; Sticky Nav</div>
+              </div>
+              <div class="column five">
+                <div class="subTask">&#10057; Event Propagation</div>
+                <div class="subTask">&#10057; Dropdown</div>
+                <div class="subTask">&#10057; Click & Drag to Scroll</div>
+                <div class="subTask">&#10057; Video Speed Controller</div>
+                <div class="subTask">&#10057; Countdown Clock</div>
+                <div class="subTask">&#10057; Whack-A-Mole Game</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Codecademy" class="task">
+          <div class="description">
+            <div class="name"><a href="https://www.codecademy.com/WithinGrasp" target="_blank">Front- & Back-End Tutorials <small>on Codecademy</small></a></div>
+            <div class="subTasks">
+              <div class="column one">
+                <div class="subTask"><a href="https://www.codecademy.com/en/tracks/youtube" target="_blank">&#10057; YouTube API</a></div>
+                <div class="subTask"><a href="https://www.codecademy.com/learn/web" target="_blank">&#10057; (HTML & CSS)</a></div>
+                <div class="subTask"><a href="https://www.codecademy.com/learn/make-a-website" target="_blank">&#10057; Make a Website</a></div>
+                <div class="subTask"><a href="https://www.codecademy.com/learn/javascript" target="_blank">&#10057; JavaScript</a></div>
+                <div class="subTask">&#10057; And more...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="CS50" class="task">
+          <div class="description">
+            <div class="name"><a href="https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/courseware/d0c88865e9434f17808f54870ea230a1/5b52cf0573bb4c9ab8bc979e728b2446/" target="_blank">CS50 <small>on edX</small></a></div>
+            <div class="subTasks">
+              <div class="column one">
+                <div class="subTask">&#10057; Session 1</div>
+                <div class="subTask">&#10057; Session 2</div>
+                <div class="subTask">&#10057; Session 3</div>
+                <div class="subTask">&#10057; Session 4</div>
+                <div class="subTask">&#10057; Session 5</div>
+                <div class="subTask">&#10057; Session 6</div>
+              </div>
+              <div class="column two">
+                <div class="subTask">&#10057; Session 7</div>
+                <div class="subTask">&#10057; Session 8</div>
+                <div class="subTask">&#10057; Session 9</div>
+                <div class="subTask">&#10057; Session 10</div>
+                <div class="subTask">&#10057; Session 11</div>
+                <div class="subTask">&#10057; Session 12</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="JSWeirdParts" class="task">
+          <div class="description">
+            <div class="name"><a href="https://www.udemy.com/understand-javascript/?couponCode=YOUTUBE19" target="_blank">JavaScript: Understanding the Weird Parts <small>on Udemy</small></a></br><small>(Currently £19, first 3.5 hours for free <a href="https://www.youtube.com/watch?v=Bv_5Zv5c-Ts&feature=youtu.be">on YouTube</a>)</small></div>
+            <div class="subTasks">
+              <div class="column one">
+                <div class="subTask">&#10057; Session 1</div>
+                <div class="subTask">&#10057; Session 2</div>
+                <div class="subTask">&#10057; Session 3</div>
+                <div class="subTask">&#10057; Session 4</div>
+                <div class="subTask">&#10057; Session 5</div>
+                <div class="subTask">&#10057; Session 6</div>
+              </div>
+              <div class="column two">
+                <div class="subTask">&#10057; Session 7</div>
+                <div class="subTask">&#10057; Session 8</div>
+                <div class="subTask">&#10057; Session 9</div>
+                <div class="subTask">&#10057; Session 10</div>
+                <div class="subTask">&#10057; Session 11</div>
+                <div class="subTask">&#10057; Session 12</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="ES6" class="task">
+          <div class="description">
+            <div class="name"><a href="https://es6.io/" target="_blank">ES6 for Everyone <small>by Wes Bos</small></a></br><small>(Decide between the Starter Package, 7 modules for $57, or the Master Package, 19 modules for $72)</small></div>
+            <div class="subTasks">
+              <div class="column one">
+                <div class="subTask">&#10057; Session 1</div>
+                <div class="subTask">&#10057; Session 2</div>
+                <div class="subTask">&#10057; Session 3</div>
+                <div class="subTask">&#10057; Session 4</div>
+                <div class="subTask">&#10057; Session 5</div>
+                <div class="subTask">&#10057; Session 6</div>
+              </div>
+              <div class="column two">
+                <div class="subTask">&#10057; Session 7</div>
+                <div class="subTask">&#10057; Session 8</div>
+                <div class="subTask">&#10057; Session 9</div>
+                <div class="subTask">&#10057; Session 10</div>
+                <div class="subTask">&#10057; Session 11</div>
+                <div class="subTask">&#10057; Session 12</div>
+              </div>
+              <div class="column three">
+                <div class="subTask">&#10057; Session 13</div>
+                <div class="subTask">&#10057; Session 14</div>
+                <div class="subTask">&#10057; Session 15</div>
+                <div class="subTask">&#10057; Session 16</div>
+                <div class="subTask">&#10057; Session 17</div>
+                <div class="subTask">&#10057; Session 18</div>
+              </div>
+              <div class="column four">
+                <div class="subTask">&#10057; Session 19</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="EloquentJS" class="task">
+          <div class="description">
+            <div class="name"><a href="http://eloquentjavascript.net/" target="_blank">Eloquent JavaScript <small>by Marijn Haverbeke</small></a></div>
+            <div class="subTasks">
+              <div class="column one">
+                <div class="subTask">&#10057; Session 1</div>
+                <div class="subTask">&#10057; Session 2</div>
+                <div class="subTask">&#10057; Session 3</div>
+                <div class="subTask">&#10057; Session 4</div>
+                <div class="subTask">&#10057; Session 5</div>
+                <div class="subTask">&#10057; Session 6</div>
+              </div>
+              <div class="column two">
+                <div class="subTask">&#10057; Session 7</div>
+                <div class="subTask">&#10057; Session 8</div>
+                <div class="subTask">&#10057; Session 9</div>
+                <div class="subTask">&#10057; Session 10</div>
+                <div class="subTask">&#10057; Session 11</div>
+                <div class="subTask">&#10057; Session 12</div>
+              </div>
+              <div class="column three">
+                <div class="subTask">&#10057; Session 13</div>
+                <div class="subTask">&#10057; Session 14</div>
+                <div class="subTask">&#10057; Session 15</div>
+                <div class="subTask">&#10057; Session 16</div>
+                <div class="subTask">&#10057; Session 17</div>
+                <div class="subTask">&#10057; Session 18</div>
+              </div>
+              <div class="column four">
+                <div class="subTask">&#10057; Session 19</div>
+                <div class="subTask">&#10057; Session 20</div>
+                <div class="subTask">&#10057; Session 21</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="gitUdacity" class="task">
+          <div class="description">
+            <div class="name"><a href="https://classroom.udacity.com/courses/ud775/lessons/2980038599/concepts/29607789240923" target="_blank">How to Use Git and GitHub <small>on Udacity</small></a></div>
+            <div class="subTasks">
+              <div class="column one">
+                <div class="subTask">&#10057; Lesson 1</div>
+                <div class="subTask">&#10057; Problem Set 1</div>
+                <div class="subTask">&#10057; Lesson 2</div>
+                <div class="subTask">&#10057; Lesson 3</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="FCC" class="task">
+          <div class="description">
+            <div class="name"><a href="https://www.freecodecamp.com/madeleinel" target="_blank">Front-End Certificate <small>on Free Code Camp</small></a></div>
+            <div class="subTasks">
+              <div class="column one">
+                <div class="subTask">&#10057; HTML5 and CSS</div>
+                <div class="subTask">&#10057; Basic Front End Development Projects</div>
+                <div class="subTask">&#8230; Basic JavaScript</div>
+                <div class="subTask">&#10057; Object Oriented and Functional Programming</div>
+                <div class="subTask">&#10057; Basic Algorithm Scripting</div>
+                <div class="subTask">&#10057; Intermediate Front End Development Projects</div>
+              </div>
+              <div class="column two">
+                <div class="subTask">&#10057; Intermediate Algorithm Scripting</div>
+                <div class="subTask">&#10057; Advanced Algorithm Scripting</div>
+                <div class="subTask">&#10057; Advanced Front End Development Projects</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="CommandLine" class="task">
+          <div class="description">
+            <div class="name"><a href="https://learnpythonthehardway.org/book/appendixa.html" target="_blank">Command Line Crash Course <small>on Learn Python the Hard Way</small></a></div>
+            <div class="subTasks">
+              <div class="column one">
+                <div class="subTask">&#10057; Session 1</div>
+                <div class="subTask">&#10057; Session 2</div>
+                <div class="subTask">&#10057; Session 3</div>
+                <div class="subTask">&#10057; Session 4</div>
+                <div class="subTask">&#10057; Session 5</div>
+                <div class="subTask">&#10057; Session 6</div>
+              </div>
+              <div class="column two">
+                <div class="subTask">&#10057; Session 7</div>
+                <div class="subTask">&#10057; Session 8</div>
+                <div class="subTask">&#10057; Session 9</div>
+                <div class="subTask">&#10057; Session 10</div>
+                <div class="subTask">&#10057; Session 11</div>
+                <div class="subTask">&#10057; Session 12</div>
+              </div>
+              <div class="column three">
+                <div class="subTask">&#10057; Session 13</div>
+                <div class="subTask">&#10057; Session 14</div>
+                <div class="subTask">&#10057; Session 15</div>
+                <div class="subTask">&#10057; Session 16</div>
+                <div class="subTask">&#10057; Session 17</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="FAC" class="task">
+          <div class="description">
+            <div class="name"><a href="https://github.com/foundersandcoders/master-reference/tree/master/coursebook" target="_blank">Founders & Coders Coursebook <small>on GitHub</small></a></div>
+            <div class="subTasks">
+              <div class="column one">
+                <div class="subTask">&#10057; Precourse</div>
+                <div class="subTask">&#10057; Week 1</div>
+                <div class="subTask">&#10057; Week 2</div>
+                <div class="subTask">&#10057; Week 3</div>
+                <div class="subTask">&#10057; Week 4</div>
+                <div class="subTask">&#10057; Week 5</div>
+              </div>
+              <div class="column two">
+                <div class="subTask">&#10057; Week 6</div>
+                <div class="subTask">&#10057; Week 7</div>
+                <div class="subTask">&#10057; Week 8</div>
+                <div class="subTask">&#10057; Week 9</div>
+                <div class="subTask">&#10057; Week 10</div>
+                <div class="subTask">&#10057; Week 11</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="typingClub" class="task">
+          <div class="description">
+            <div class="name"><a href="https://www.typingclub.com/sportal/team-2/program-typing-jungle.game" target="_blank">Typing Practice <small>on Typing Club</small></a></div>
+            <div class="subTasks">
+              <div class="column one">
+                <div class="subTask">&#10008; Home Row</div>
+                <div class="subTask">&#10008; Top Row</div>
+                <div class="subTask">&#8230; Bottom Row</div>
+                <div class="subTask">&#10057; Basic Level 1</div>
+                <div class="subTask">&#10057; Shift Key</div>
+                <div class="subTask">&#10057; Basic Level 2</div>
+              </div>
+              <div class="column two">
+                <div class="subTask">&#10057; Numbers</div>
+                <div class="subTask">&#10057; Basic Level 3</div>
+                <div class="subTask">&#10057; Symbols</div>
+              </div>
+              <div class="column three">
+                <div class="subTask">&#10057; Advanced Level 1</div>
+                <div class="subTask">&#10057; More Symbols</div>
+                <div class="subTask">&#10057; Advanced Level 2</div>
+                <div class="subTask">&#10057; Advanced Level 3</div>
+                <div class="subTask">&#10057; Advanced Level 4</div>
+                <div class="subTask">&#10057; Advanced Level 5</div>
+              </div>
+              <div class="column four">
+                <div class="subTask">&#10057; Advanced Level 6</div>
+                <div class="subTask">&#10057; Advanced Level 7</div>
+                <div class="subTask">&#10057; Advanced Level 8</div>
+                <div class="subTask">&#10057; Advanced Level 9</div>
+                <div class="subTask">&#10057; Advanced Level 10</div>
+                <div class="subTask">&#10057; Advanced Level 11</div>
+              </div>
+              <div class="column five">
+                <div class="subTask">&#10057; Advanced Level 12</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="projects" class="container">
+        <h2>Projects</h2>
+        <div id="portfolio" class="task">
+          <div class="description">
+            <div class="name">Portfolio Page <small>for me</small></div>
+            <div class="subTasks">
+              <div class="column one">
+                <div class="subTask">Category 1:</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+              </div>
+              <div class="column two">
+                <div class="subTask">Category 2:</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+              </div>
+              <div class="column three">
+                <div class="subTask">Category 3:</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+              </div>
+              <div class="column four">
+                <div class="subTask">Category 4:</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="cheatJS" class="task">
+          <div class="description">
+            <div class="name">Cheat Sheet <small>for JavaScript</small></div>
+            <div class="subTasks">
+              <div class="column one">
+                <div class="subTask">Category 1:</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+              </div>
+              <div class="column two">
+                <div class="subTask">Category 2:</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+              </div>
+              <div class="column three">
+                <div class="subTask">Category 3:</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+              </div>
+              <div class="column four">
+                <div class="subTask">Category 4:</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="blogM" class="task">
+          <div class="description">
+            <div class="name">Blog Page <small>for Mathilda</small></div>
+            <div class="subTasks">
+              <div class="column one">
+                <div class="subTask">Category 1:</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+              </div>
+              <div class="column two">
+                <div class="subTask">Category 2:</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+              </div>
+              <div class="column three">
+                <div class="subTask">Category 3:</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+              </div>
+              <div class="column four">
+                <div class="subTask">Category 4:</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="miniProjects" class="task">
+          <div class="description">
+            <div class="name">Mini Projects <small>of own devising</small></div>
+            <div class="subTasks">
+              <div class="column one">
+                <div class="subTask">&#10008; Digital Clock</div>
+                <div class="subTask">&#8230; Clock with Time Zone selector</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+              </div>
+              <div class="column two">
+                <div class="subTask">Category 2:</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+              </div>
+              <div class="column three">
+                <div class="subTask">Category 3:</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+              </div>
+              <div class="column four">
+                <div class="subTask">Category 4:</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="js30Projects" class="task">
+          <div class="description">
+            <div class="name">JS30 <small>projects</small></div>
+            <div class="subTasks">
+              <div class="column one">
+                <div class="subTask">&#8230; Drum Kit</div>
+                <div class="subTask">&#10008; Clock</div>
+                <div class="subTask">&#8230; HTML Canvas</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+              </div>
+              <div class="column two">
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="fccProjects" class="task">
+          <div class="description">
+            <div class="name">Free Code Camp <small>projects</small></div>
+            <div class="subTasks">
+              <div class="column one">
+                <div class="subTask">Basic FE:</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+              </div>
+              <div class="column two">
+                <div class="subTask">Intermediate FE:</div>
+                <div class="subTask">&#8230; <a href="https://madeleinel.github.io/travelQuotes/" target="_blank">Random Quote Generator</a></div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+              </div>
+              <div class="column three">
+                <div class="subTask">Advanced FE:</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+                <div class="subTask">&#10057; Example</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- Closing "main" div -->
+
+      <footer>Created by Madeleine Linder (2017)</footer>
+    </body>
+  </html>

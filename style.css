@@ -1,0 +1,249 @@
+/* set up using flexbox */
+
+html {
+  margin: 0;
+  width: cover;
+}
+
+body {
+  background: tomato;
+  font-family: raleway, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  text-indent: 2.5rem;
+  padding: 1rem;
+  width: 96vw;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  width: 100vw;
+  height: 20vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 10000;
+  text-align: center;
+}
+
+
+
+
+
+#navBar ul { /* [moved to #navList instead] */
+  list-style: none;
+  /*width: 96vw;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;*/
+}
+
+#navList	{
+	height: 2rem;
+	/*position: absolute;*/
+  /*border: 1px solid black;*/
+  width: 96vw;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#navList li { /* Styling each list item */
+  /*border: 1px solid yellow;*/
+  margin: 0;
+	height: 2rem;
+	width: 10rem;
+	/*float: left;
+	text-align: center;
+	list-style: none;*/
+}
+
+#navList a	{ /* styling all links within the list */
+	padding: 0;
+	text-decoration: none;
+	/*display: block;*/
+}
+
+#navList li ul 	{
+  display: none;  /* Hides the drop-down menu */
+  height: auto;
+  width: 10rem;
+  margin: 0.8rem 0 0 0; /* Aligns drop-down box underneath the menu item */
+  padding: 0; /* Aligns drop-down box underneath the menu item */
+}
+
+#navList li:hover ul 	{
+  box-shadow: 2px 2px 4px black, -2px -2px 4px salmon;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+#navList li:hover ul li {
+  background-color: tomato;
+  font-size: 12px;
+  height: auto;
+  width: 10rem;
+  padding: 0.5rem;
+}
+
+
+
+#main {
+  width: 98vw;
+  position: absolute;
+  top: 20vh;
+  left: 0;
+  margin: 0;
+}
+
+.container {
+  width: 90vw;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 5vh 5vw;
+}
+
+.container:target, .task:target {
+  padding-top: 20vh;
+  margin-top: -20vh;
+}
+
+#dailies {
+  /*background-color: rgba(255, 255, 255, 0.1);*/
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#dailies .tasks, #dailies .task {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+#dailies .column {
+  width: 40vw;
+}
+
+#dailies .check, #dailies .description {
+  border: none;
+}
+
+#courses .task, #projects .task {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border-bottom: 1px solid black;
+}
+
+.check, .description {
+  padding: 1rem 0.2rem 1rem 0.2rem;
+}
+
+#courses .task:last-child, #projects .task:last-child {
+  border-bottom: none;
+}
+
+.check {
+  width: 5vw;
+  text-align: center;
+  font-size: 18px;
+}
+
+.description {
+  width: 95vw;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.name {
+  padding: 0 0 0.4rem 0;
+}
+
+.subTasks {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.subTask {
+  padding: 0.4rem 0.4rem 0.4rem 2rem;
+  font-size: 14px;
+}
+
+/*.subTask:first-letter {
+    font-size: 18px;
+}*/
+
+Unicode[glyph="\2718"]{
+  color: white;
+}
+
+/*&#10008;*/
+
+/*html = &#xe9;
+css = \0000e9*/
+
+footer {
+  width: 100vw;
+  height: 2.5vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
