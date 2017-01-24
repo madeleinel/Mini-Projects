@@ -1,0 +1,29 @@
+body {
+  background-color: grey;
+  min-height: 100vh;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.clock {
+  height: 10rem;
+  border-radius: 40px;
+  background-color: white;
+  display: inline-block;
+  margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+}
+
+.clockFace {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.print, .betw {
+  font-size: 8rem;
+  font-family: verdana, sans-serif;
+}
