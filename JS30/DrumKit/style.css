@@ -1,0 +1,33 @@
+body {
+  background-color: tomato;
+  color: white;
+  font-family: verdana, sans-serif;
+  font-size: 12px;
+}
+
+kbd {
+  display: block;
+  font-size: 24px;
+}
+
+.keys {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 42%;
+}
+
+.key {
+  background-color: #111;
+  width: 4rem;
+  padding: 1rem;
+  margin: 1rem;
+  transition: 2s;
+}
+
+.playing {
+  background-color: rgba(0,0,0,0.3);
+  box-shadow: 4px 4px 20px white, -4px -4px 20px white;
+}

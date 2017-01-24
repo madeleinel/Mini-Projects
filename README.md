@@ -12,7 +12,7 @@
 
 ### [FreeCodeCamp](https://www.freecodecamp.com/)
 
-+ [Random Quote Generator (WIP - to include Tweet button, update styling, etc)](/FCC/QuoteGenerator)
++ [Random Quote Generator (WIP - to fix character formatting issue, include Tweet button, update styling, etc)](https://github.com/madeleinel/Mini-Projects/tree/master/FCC/QuoteGenerator)
 
 ### Other Projects
 
