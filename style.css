@@ -40,6 +40,8 @@ header {
 
 #navBar ul { /* [moved to #navList instead] */
   list-style: none;
+  margin: 0;
+  padding: 0;
   /*width: 96vw;
   display: -webkit-flex;
   display: -ms-flex;
