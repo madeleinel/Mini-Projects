@@ -1,0 +1,22 @@
+html, body {
+  margin: 0;
+  text-align: center;
+}
+
+canvas {
+  border: 2px solid black;
+}
+
+input[type=color] {
+  background: none;
+  border: none;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  padding: 0 0 0 0.2rem;
+  transform: translateY(0.3rem)
+}
+
+input[type=color]:focus {
+  outline: none;
+}
