@@ -1,18 +1,55 @@
 html, body {
   margin: 0;
   text-align: center;
+  font-family: Verdana;
+  overflow: hidden;
 }
 
-canvas {
-  border: 2px solid black;
+/*////////////////////////////////////////////////*/
+/* Styling the header */
+header {
+  height: 18.5vh;
 }
 
+h1 {
+  background-color: tomato;
+  color: white;
+  font-size: 4em;
+  margin: 0;
+  padding: 0.6em;
+}
+
+/* Done styling the header */
+/*////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////*/
+/* Styling the controls section */
+
+#controls {
+  background-color: papayawhip;
+  position: relative;
+  padding: 1em auto;
+  max-height: 14vh;
+}
+
+.selectorArea {
+  border: 1px solid purple;
+  display: inline-block;
+  /*padding: 1em;*/
+  max-height: inherit;
+}
+
+input {
+  cursor: pointer;
+}
+
+/* Styling the colour chooser */
 input[type=color] {
   background: none;
   border: none;
   border-radius: 50%;
-  height: 2rem;
-  width: 2rem;
+  height: 4rem;
+  width: 4rem;
   padding: 0 0 0 0.2rem;
   transform: translateY(0.3rem)
 }
@@ -21,7 +58,28 @@ input[type=color]:focus {
   outline: none;
 }
 
-input[type=radio] {
-  outline: none;
-  height: 10px;
+/* Styling the brush width chooser */
+input[type=range] {
+  /*msaamsl;*/
 }
+
+/* Styling the effect list */
+ul li {
+  list-style: none;
+}
+
+/* Done styling the controls */
+/*////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////*/
+/* Styling the canvas */
+/* Canvas size is set within 'script.js' */
+
+canvas {
+  position: relative;
+  /*background-color: var(--background);*/
+  /*background-color: black;*/
+}
+
+/* Done styling the canvas */
+/*////////////////////////////////////////////////*/

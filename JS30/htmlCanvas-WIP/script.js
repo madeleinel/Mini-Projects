@@ -1,20 +1,23 @@
+//////// Line 41 >> Sets background colour, BUT overlays what has already been drawn
+//////// Set a cmd-z option? (how??)
+
 // Set const "canvas" to be the canvas div with id "draw"
 const canvas = document.querySelector("#draw");
 // Set context to be 2d (?), getting the data from the "canvas" variable
 const ctx = canvas.getContext("2d");
 
 // Set the canvas to span the entire window
-canvas.width = (window.innerWidth * 0.98);
-canvas.height = (window.innerHeight * 0.8);
+canvas.width = (window.innerWidth);
+canvas.height = (window.innerHeight * 0.676);
 
 // Set the default colour of the brushstrokes
     // ctx.strokeStyle = "tomato";
 // Set the default style of brushstoke joints
-ctx.lineJoin = "round";
+ctx.lineJoin = "round"; // round / square / butt
 // Set the default style of brushstoke ends
-ctx.lineCap = "round";
+ctx.lineCap = "round"; // round / square / butt
 // Set the width of the brush strokes
-ctx.lineWidth = 10;
+    // ctx.lineWidth = 10;
 // Set the colour to combine with existing colour when doubling over previous brush strokes
 ctx.globalCompositeOperation = 'source-over';
 // console.log(ctx.globalCompositeOperation);
@@ -26,9 +29,11 @@ let lastY = 0;
 let hue = 0;
 let direction = true;
 let newColor = "tomato";
+let newBackground = "white";
 let newWidth = 10;
 
 const colorChange = document.getElementById('colorSelector');
+const backgroundChange = document.getElementById('backgroundSelector');
 const widthChange = document.getElementById('widthSelector');
 
 // Listening for 'change' within the constant 'colorChange'
@@ -36,6 +41,11 @@ const widthChange = document.getElementById('widthSelector');
 colorChange.addEventListener('change', (e) => {
   newColor = e.srcElement.value;
 });
+backgroundChange.addEventListener('change', (e) => {
+  newBackground = e.srcElement.value;
+  ctx.fillStyle = newBackground;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+})
 widthChange.addEventListener('change', (e) => {
   newWidth = e.srcElement.value;
 });
