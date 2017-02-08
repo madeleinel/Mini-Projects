@@ -18,11 +18,11 @@
     <input type="range" id="widthSelector" name="lineWidth" min="1" max="100" value="10" data-sizing="px"></br>
 
     <label for="effect">Effect: </label>
-      <ul class="effectList">
+      <ul id="effectList">
         <li><input type="radio" class="effectValue" name="effect" value="source-over" checked>Source-Over (Default)</li>
-        <li><input type="radio" class="effectValue" name="effect" value="source-out">Source-Out</li>
-        <li><input type="radio" class="effectValue" name="effect" value="overlay">Blur</li>
-        <li><input type="radio" class="effectValue" name="effect" value="sharp">Sharp</li>
+        <li><input type="radio" class="effectValue" name="effect" value="exclusion">Exclusion</li>
+        <li><input type="radio" class="effectValue" name="effect" value="darken">Darken</li>
+        <li><input type="radio" class="effectValue" name="effect" value="lighten">Lighten</li>
         <!-- See effects at https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation -->
       </ul>
   </div>

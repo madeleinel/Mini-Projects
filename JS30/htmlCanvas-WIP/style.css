@@ -20,3 +20,8 @@ input[type=color] {
 input[type=color]:focus {
   outline: none;
 }
+
+input[type=radio] {
+  outline: none;
+  height: 10px;
+}
