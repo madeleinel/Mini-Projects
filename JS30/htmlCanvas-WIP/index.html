@@ -13,24 +13,34 @@
   <header><h1>Let's Paint!</h1></header>
 
   <div id="controls">
-    <div class="selectorArea" id="colorSelectorArea">
-      <label for="colour">Brush colour: </label>
-      <input type="color" id="colorSelector" name="brushColour" value='tomato'></br>
-    </div>
+    <h2>Options</h2>
 
     <div class="selectorArea" id="backgroundSelectorArea">
       <label for="backgroundColour">Background colour: </label>
       <input type="color" id="backgroundSelector" name="backgroundColour" value='tomato'></br>
     </div>
 
+    <div class="selectorArea" id="colorSelectorArea">
+      <label for="colour">Brush colour: </label>
+      <input type="color" id="colorSelector" name="brushColour" value='tomato'></br>
+    </div>
+
     <div class="selectorArea" id="lineWidthSelectorArea">
-      <label for="lineWidth">Line width: </label>
+      <label for="lineWidth">Brush width: </label>
       <input type="range" id="widthSelector" name="lineWidth" min="1" max="100" value="10" data-sizing="px"></br>
     </div>
 
+    <div class="selectorArea" id="brushEffectSelectorArea">
+      <label for="lineStyle">Brush style: </label>
+      <ul id="brushEffectList">
+        <li><input type="radio" class="brushValue" name="brushEffect" value="round" checked>Round (Default)</li>
+        <li><input type="radio" class="brushValue" name="brushEffect" value="square">Square</li>
+        <li><input type="radio" class="brushValue" name="brushEffect" value="butt">Fan</li>
+      </ul>
+    </div>
 
     <div class="selectorArea" id="effectSelectorArea">
-      <label for="effect">Effect: </label>
+      <label for="effect">Colour effect: </label>
       <ul id="effectList">
         <li><input type="radio" class="effectValue" name="effect" value="source-over" checked>Source-Over (Default)</li>
         <li><input type="radio" class="effectValue" name="effect" value="exclusion">Exclusion</li>
@@ -39,6 +49,7 @@
         <!-- See effects at https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation -->
       </ul>
     </div>
+
   </div>
 
   <canvas id="draw"></canvas>

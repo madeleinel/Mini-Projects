@@ -7,15 +7,21 @@ const canvas = document.querySelector("#draw");
 const ctx = canvas.getContext("2d");
 
 // Set the canvas to span the entire window
-canvas.width = (window.innerWidth);
-canvas.height = (window.innerHeight * 0.676);
+// Have to set this in order to enable drawing functions below
+canvas.width = (window.innerWidth * 0.8);
+canvas.height = (window.innerHeight * 0.816);
+//
+canvas.style.top = "18.4vh";
+canvas.style.left = "20vw";
+// canvas.style.border = "2px solid purple";
+
 
 // Set the default colour of the brushstrokes
     // ctx.strokeStyle = "tomato";
 // Set the default style of brushstoke joints
-ctx.lineJoin = "round"; // round / square / butt
+ctx.lineJoin = 'round'; // round / square / butt
 // Set the default style of brushstoke ends
-ctx.lineCap = "round"; // round / square / butt
+ctx.lineCap = 'round'; // round / square / butt
 // Set the width of the brush strokes
     // ctx.lineWidth = 10;
 // Set the colour to combine with existing colour when doubling over previous brush strokes
@@ -55,7 +61,29 @@ widthChange.addEventListener('change', (e) => {
 //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
 
+// Enable brush effect choices
 
+const brushEffectList = document.getElementById('brushEffectList');
+const brushEffectOptions = document.querySelectorAll('#brushEffectList input');
+const nOfBrushEffects = brushEffectOptions.length;
+const brushEffectValues = document.querySelectorAll('.brushValue');
+
+brushEffectList.addEventListener('change', (e) => {
+  for (i = 0; i < nOfBrushEffects; i++) {
+    if (brushEffectOptions[i].checked === true) {
+
+      // ctx.lineJoin = brushEffectOptions[i].value; >> for some reason, this will not update the variable >> look into how to fix it && whether it is needed for the desired brush stroke effect
+      ctx.lineCap = brushEffectOptions[i].value;
+    }
+  }
+});
+
+
+
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+
+// Enable colour effect choices
 
 const effectList = document.getElementById('effectList');
 // console.log(effectList);
@@ -90,7 +118,7 @@ effectList.addEventListener('change', (e) => {
 //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
 
-
+// Enable drawing on the canvas
 
 function draw(e) {
   if(!isDrawing) return;  // if currently not-drawing, stop the function from running

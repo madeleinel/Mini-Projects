@@ -2,6 +2,7 @@ html, body {
   margin: 0;
   text-align: center;
   font-family: Verdana;
+  font-size: 14px;
   overflow: hidden;
 }
 
@@ -17,6 +18,8 @@ h1 {
   font-size: 4em;
   margin: 0;
   padding: 0.6em;
+  /*min-height: 10vh;*/
+  max-height: 18vh;
 }
 
 /* Done styling the header */
@@ -27,27 +30,40 @@ h1 {
 
 #controls {
   background-color: papayawhip;
-  position: relative;
-  padding: 1em auto;
-  max-height: 14vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 9em 0;
+  height: 100%;
+  /*min-width: 20vw;*/
+  max-width: 20vw;
+  z-index: -99;
 }
 
 .selectorArea {
-  border: 1px solid purple;
+  border: 0px solid purple;
   display: inline-block;
-  /*padding: 1em;*/
-  max-height: inherit;
+  text-align: center;
+  padding: 1em 0;
+  /*max-height: inherit;*/
+  max-width: 18vw;
+}
+
+label {
+  border: 0px solid blue;
+  display: inline-block;
 }
 
 input {
   cursor: pointer;
+  max-width: 18vw;
 }
 
 /* Styling the colour chooser */
 input[type=color] {
   background: none;
   border: none;
-  border-radius: 50%;
+  /*border-radius: 50%;*/
   height: 4rem;
   width: 4rem;
   padding: 0 0 0 0.2rem;
@@ -66,6 +82,7 @@ input[type=range] {
 /* Styling the effect list */
 ul li {
   list-style: none;
+  margin-left: -3em;
 }
 
 /* Done styling the controls */
@@ -73,12 +90,10 @@ ul li {
 /*////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////*/
 /* Styling the canvas */
-/* Canvas size is set within 'script.js' */
+/* Need to define the canvas size & position within script.js to enable drawing within the desired area */
 
 canvas {
-  position: relative;
-  /*background-color: var(--background);*/
-  /*background-color: black;*/
+  position: fixed;
 }
 
 /* Done styling the canvas */
